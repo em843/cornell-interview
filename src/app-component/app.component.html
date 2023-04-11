@@ -1,0 +1,25 @@
+<h1>To Do Today</h1>
+<h2>Today's Date</h2>
+
+<ng-container *ngIf="tasks$ | async as tasks">
+  <mat-list>
+    <mat-list-item *ngFor="let task of tasks">
+      <mat-checkbox [checked]="task.completed" (click)="onBoxCheck(task)"></mat-checkbox>
+      {{ task.description }}
+      <button>Edit</button>
+      <button (click)="onDeleteTask(task)">Delete</button>
+    </mat-list-item>
+  </mat-list>
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <input
+      id="description"
+      formControlName="description"
+      placeholder="Add a new task..."
+      (keyup.enter)="onSubmit()"
+      required
+    />
+    <button mat-button type="submit">+</button>
+  </form>
+</ng-container>
+
+<router-outlet></router-outlet>
