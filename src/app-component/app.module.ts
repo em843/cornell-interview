@@ -7,7 +7,12 @@ import { MatListModule } from '@angular/material/list'
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { EditableModule } from '@ngneat/edit-in-place';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button'
+import {MatInputModule} from '@angular/material/input';
+import { provideAnimations } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -21,9 +26,12 @@ import { EditableModule } from '@ngneat/edit-in-place';
     ReactiveFormsModule,
     HttpClientModule,
     MatCheckboxModule,
-    EditableModule
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [provideAnimations()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

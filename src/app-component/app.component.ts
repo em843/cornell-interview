@@ -4,6 +4,7 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { AppService } from 'src/app-service/app.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +16,7 @@ export class AppComponent implements OnInit {
   taskForm = this.formBuilder.group({
     description: new FormControl('', [Validators.required]),
   });
+  currentDate = new Date()
 
   constructor(
     private formBuilder: FormBuilder,
@@ -60,6 +62,10 @@ export class AppComponent implements OnInit {
       this.taskForm.reset({ description: '' });
     }
   }
+
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
 
   get description() {
     return this.taskForm.get('description');
