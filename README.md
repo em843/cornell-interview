@@ -10,7 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. To get mo
 
 ## Design and Development
 
-I first created a skeleton app that had working API calls but virtually no CSS. Much of the CSS comes from Angular Material UI components and typography.
+I first created a skeleton app that had working API calls but virtually no CSS, then figured out styling later. Much of the CSS comes from Angular Material UI components and typography.
 
 My goal was a design that felt intuitive to use. The page reloads when tasks are added and deleted so it can fetch the newly modified list of tasks. It does not reload when checkboxes are checked, but tasks are being updated via API whenever checkboxes are toggled--this can be verified if you reload the page to see that completed tasks persist.
 
