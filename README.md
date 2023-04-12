@@ -14,7 +14,7 @@ I first created a skeleton app that had working API calls but virtually no CSS, 
 
 My goal was a design that felt intuitive to use. The page reloads when tasks are added and deleted so it can fetch the newly modified list of tasks. It does not reload when checkboxes are checked, but tasks are being updated via API whenever checkboxes are toggled--this can be verified if you reload the page to see that completed tasks persist.
 
-In total, this app took about 7 non-consecutive hours to complete.
+In total, this app took about 7 non-consecutive hours to complete. I spent a bit more time after that figuring out how to use GitHub Pages.
 
 ### Future Improvements
 
