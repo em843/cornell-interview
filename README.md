@@ -1,8 +1,8 @@
 # Cornell To-Do List App
 
-A project created for the Cornell Research Administration Information Services Team.
+An Angular web app created for the Cornell Research Administration Information Services Team.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+## Deployed [HERE!](https://em843.github.io)
 
 ## Development server
 
