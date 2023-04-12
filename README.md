@@ -2,7 +2,7 @@
 
 An Angular web app created for the Cornell Research Administration Information Services Team.
 
-## Deployed [HERE!](https://em843.github.io)
+## Deployed [HERE!](https://em843.github.io/cornell-interview/)
 
 ## Development server
 
