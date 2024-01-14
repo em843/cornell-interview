@@ -1,6 +1,6 @@
 # Cornell To-Do List App
 
-An Angular web app created for the Cornell Research Administration Information Services Team.
+An Angular web app created for a job interview.
 
 ## Deployed [HERE!](https://em843.github.io/cornell-interview/)
 
